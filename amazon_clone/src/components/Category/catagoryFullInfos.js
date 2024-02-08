@@ -7,20 +7,20 @@ export const categoryInfos = [
   },
   {
     title: "Discover fashion trends",
-    name: "Women's clothing",
+    name: "women's clothing",
     imgLink:
       "https://images-na.ssl-images-amazon.com/images/G/01/softlines/shopbop/ingress/2023/March/mp_20230219_ff_desktopsinglecategory_desktop_379x304_1._SY304_CB612639047_.jpg",
   },
   {
-    title: "Training Gear",
-    name: "training gear",
+    title: "Men's Clothing",
+    name: "men's clothing",
     imgLink:
-      "https://images-na.ssl-images-amazon.com/images/G/01/AMAZON_FASHION/2024/CORE/WINTER/Jan24_Homepage/Cat_cards/CATCard_d_U50_FITNESS_2x._SY608_CB585451159_.jpg",
+      "https://m.media-amazon.com/images/I/A1X74ZCjO+L._AC_SY879_.jpg",
   },
   {
-    title: "Editors' pick for Kindle",
-    name: "editors' pick for kindle",
+    title: "Jewelery",
+    name: "jewelery",
     imgLink:
-      "https://images-na.ssl-images-amazon.com/images/G/01/kindle/ku/Content/editors-picks/feb2024/758x608._SY608_CB583534223_.jpg",
+      "https://m.media-amazon.com/images/I/71dnAcuqutL._AC_SY695_.jpg",
   },
 ];
