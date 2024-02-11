@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import classes from "./header.module.css";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import LowerHeader from "./LowerHeader";
 import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
@@ -8,12 +8,10 @@ import { BiCart } from "react-icons/bi";
 import { DataContext } from "../DataProvider/DataProvider";
 
 function Header() {
-
-  const [{basket}, dispatch] = useContext(DataContext)
-  const totalItem = basket?.reduce((amount,item)=>{
-    return item.amount + amount
-  },0)
-
+  const [{ basket }, dispatch] = useContext(DataContext);
+  const totalItem = basket?.reduce((amount, item) => {
+    return item.amount + amount;
+  }, 0);
 
   return (
     <section className={classes.fixed}>
@@ -57,7 +55,7 @@ function Header() {
               </select>
             </Link>
             {/* three components */}
-            <Link to="">
+            <Link to="/auth">
               <p>Sign In</p>
               <span>Account & Lists</span>
             </Link>
