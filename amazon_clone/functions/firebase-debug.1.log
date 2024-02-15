@@ -1,0 +1,80 @@
+[debug] [2024-02-14T04:44:08.396Z] ----------------------------------------------------------------------
+[debug] [2024-02-14T04:44:08.397Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\ashe6\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2024-02-14T04:44:08.397Z] CLI Version:   13.2.1
+[debug] [2024-02-14T04:44:08.398Z] Platform:      win32
+[debug] [2024-02-14T04:44:08.398Z] Node Version:  v20.10.0
+[debug] [2024-02-14T04:44:08.398Z] Time:          Tue Feb 13 2024 22:44:08 GMT-0600 (Central Standard Time)
+[debug] [2024-02-14T04:44:08.398Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-02-14T04:44:08.400Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2024-02-14T04:44:08.471Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-02-14T04:44:08.472Z] > authorizing via signed-in user (ashenafiendeshaw67@gmail.com)
+[debug] [2024-02-14T04:44:08.472Z] [iam] checking project clone-ab96a for permissions ["firebase.projects.get"]
+[debug] [2024-02-14T04:44:08.472Z] > refreshing access token with scopes: []
+[debug] [2024-02-14T04:44:08.473Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-02-14T04:44:08.473Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-14T04:44:08.634Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-02-14T04:44:08.634Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-02-14T04:44:08.639Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ab96a:testIamPermissions [none]
+[debug] [2024-02-14T04:44:08.639Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ab96a:testIamPermissions x-goog-quota-user=projects/clone-ab96a
+[debug] [2024-02-14T04:44:08.640Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ab96a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-14T04:44:08.642Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2024-02-14T04:44:08.642Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2024-02-14T04:44:08.938Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ab96a:testIamPermissions 200
+[debug] [2024-02-14T04:44:08.939Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-ab96a:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-02-14T04:44:08.941Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2024-02-14T04:44:08.948Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2024-02-14T04:44:08.948Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":10220},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[debug] [2024-02-14T04:44:08.948Z] Running emulators:  {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":10220},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"functions":{"name":"functions","host":"127.0.0.1","port":5001},"eventarc":{"name":"eventarc","host":"127.0.0.1","port":9299}}
+[warn] !  functions: You are already running the Cloud Functions emulator on port 5001. Running the emulator and the Functions shell simultaenously can result in unexpected behavior. 
+[debug] [2024-02-14T04:44:08.953Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-02-14T04:44:08.954Z] defaultcredentials: writing to file C:\Users\ashe6\AppData\Roaming\firebase\ashenafiendeshaw67_gmail_com_application_default_credentials.json
+[debug] [2024-02-14T04:44:08.956Z] DEBUG: Setting GAC to C:\Users\ashe6\AppData\Roaming\firebase\ashenafiendeshaw67_gmail_com_application_default_credentials.json
+[debug] [2024-02-14T04:44:08.957Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-ab96a/adminSdkConfig [none]
+[debug] [2024-02-14T04:44:09.249Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-ab96a/adminSdkConfig 200
+[debug] [2024-02-14T04:44:09.249Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-ab96a/adminSdkConfig {"projectId":"clone-ab96a","storageBucket":"clone-ab96a.appspot.com"}
+[debug] [2024-02-14T04:44:09.264Z] [functions] Watching "C:\Users\ashe6\Desktop\Evangadi\Phase_4\Amazon_Clone_2024\amazon_clone\functions" for Cloud Functions...
+[debug] [2024-02-14T04:44:09.267Z] Validating nodejs source
+[debug] [2024-02-14T04:44:10.120Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.5.0",
+    "@stripe/stripe-js": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.3",
+    "express": "^4.18.2",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "stripe": "^14.16.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2024-02-14T04:44:10.120Z] Building nodejs source
+[debug] [2024-02-14T04:44:10.121Z] Failed to find version of module node: reached end of search path C:\Users\ashe6\Desktop\Evangadi\Phase_4\Amazon_Clone_2024\amazon_clone\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2024-02-14T04:44:10.123Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-02-14T04:44:10.127Z] Found firebase-functions binary at 'C:\Users\ashe6\Desktop\Evangadi\Phase_4\Amazon_Clone_2024\amazon_clone\functions\node_modules\.bin\firebase-functions'
+[info] Serving at port 8320
+
+[debug] [2024-02-14T04:44:10.404Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2024-02-14T04:44:15.435Z] [functions] Loaded functions definitions from source: api.
+[debug] [2024-02-14T04:44:15.435Z] [functions[us-central1-api]] http function initialized (http://127.0.0.1:5000/clone-ab96a/us-central1/api).
+[info] i  functions: Loaded functions: api 
+[info] i  functions: Connected to running eventarc emulator at 127.0.0.1:9299, calls to this service will affect the emulator 
+[warn] !  functions: The following emulators are not running, calls to these services will affect production: firestore, database, pubsub, storage 
