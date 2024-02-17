@@ -6,7 +6,7 @@ import { SlLocationPin } from "react-icons/sl";
 import { BsSearch } from "react-icons/bs";
 import { BiCart } from "react-icons/bi";
 import { DataContext } from "../DataProvider/DataProvider";
-import {auth} from '../../Utility/firebase'
+import { auth } from "../../Utility/firebase";
 
 function Header() {
   const [{ user, basket }, dispatch] = useContext(DataContext);
@@ -36,11 +36,10 @@ function Header() {
               </div>
             </div>
           </div>
-
           {/* search bar */}
           <div className={classes.search}>
             <select name="" id="">
-              <option value="">All</option>
+              <option value="">ALL</option>
             </select>
             <input type="text" />
             <BsSearch size={38} />

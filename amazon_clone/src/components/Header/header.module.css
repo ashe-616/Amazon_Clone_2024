@@ -56,15 +56,19 @@
     flex: 1;
 }
 
-.search select {
-    border: none;
-}
-
-.search select, .search input {
+.search input {
     padding: 10px;
     font-weight: bold;
     outline: 1px solid white;
 }
+
+.search select {
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    outline: 1px solid white;
+}
+
 
 .search input {
     border: 1px solid white;
@@ -100,7 +104,7 @@
 }
 
 .order__container p {
-    font-size: 10px;
+    font-size: 13px;
 }
 
 .language {
@@ -126,10 +130,10 @@
 .cart span {
     position: absolute;
     font-weight: bold;
-    top: 0px;
+    top: -6px;
     font-size: 20px;
     background-color: #1a1a1a;
-    left: 16px;
+    left: 14px;
     color: orange;
 }
 
